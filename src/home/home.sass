@@ -4,7 +4,7 @@
 .info-img-cont
     position: relative
     width: 100%
-    justify-content: space-evenly    
+    justify-content: space-evenly   
     .my-name-roles
         position: relative
         display: flex
@@ -39,17 +39,76 @@
         align-items: center
         justify-content: center
         img
-            max-width: 600px
+            max-width: 550px
             width: 100%
-
 .base
     position: relative
     width: 100%
     height: 100px
     margin-top: -100px
     background-color: #ffffff93
+.open-menu-bars
+    display: flex
+    flex-direction: column
+    gap:5px
+    position: fixed
+    right: 10px
+    top: 10px
+    padding: 10px
+    cursor: pointer
+    z-index: 10
+    .open-menu-bar
+        height: 4px
+        width: 30px
+        background-color: #000000
+// About
+.about-cont
+    justify-content: space-evenly
+.about-img-cont
+    position: relative
+    img
+        max-width: 550px
+.about-info-cont
+    display: flex
+    flex-direction: column
+    gap: 20px
+    align-items: center
+    justify-content: center
+    padding: 0 20px
+    p
+        max-width: 600px
+        color: #717171
+@media screen and (max-width:900px) 
+    .about-img-cont
+        img
+            max-width: 280px
+    .about-cont
+        flex-direction: column
 
-
+@media screen and (max-width: 1200px)
+    .info-img-cont
+        .my-name-roles
+            .my-this-me
+                font-size: 20px
+            .my-name
+                font-size: 100px  
+            .my-web
+                font-size: 140px
+                margin-top: -80px
+            .my-fornt-end
+                font-size: 60px
+                margin-top: -80px
+            .my-developer
+                font-size: 50px
+                margin-top: -20px
+        .my-img-cont
+            img
+                max-width: 400px
+@media screen and (max-width: 600px)
+    .my-name-roles
+        margin-top: 60px
+    .info-img-cont
+        flex-direction: column
 
 
 
